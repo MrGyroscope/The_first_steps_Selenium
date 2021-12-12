@@ -27,7 +27,7 @@ public class FindStiker_8 {
     @Test
     public void CheckSticker() {
         driver.get("http://localhost/litecart/en/");
-        List<WebElement> Ducks = driver.findElements(By.cssSelector("li.product.column.shadow.hover-light"));
+        List<WebElement> Ducks = driver.findElements(By.cssSelector(".hover-light"));
         for (int n = 0; n < Ducks.size(); n = n + 1) {
             WebElement AnySticker = Ducks.get(n);
             int m=n+1;
